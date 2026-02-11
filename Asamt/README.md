@@ -1,43 +1,43 @@
-# aSAMt / sam2 — HPCC Workflow (MSU)
+# aSAMt / sam2 — HPCC MSU
 
 ## Goal
-Generate structural ensembles using aSAMt (sam2), starting from predicted structures (Boltz-derived PDBs), and convert the results into a format viewable in PyMOL.
+Run aSAMt (sam2) on the MSU HPCC to generate **structural ensembles** starting from predicted structures (Boltz-derived PDBs), then convert the ensemble outputs into **PyMOL-viewable** multi-model PDB files for visualization and superposition.
 
 ## What we used as input
-- Starting structures as **PDB files** for each protein (converted from Boltz CIF outputs).
-- HPCC scratch workspace to organize inputs/outputs.
+- Starting structures as **PDB files** for each protein (typically converted from Boltz mmCIF outputs).
+- A persistent HPCC workspace (scratch / research storage) to organize inputs, outputs, and logs.
 
 ## Where the work happened
-- Setup and job submission were done on an HPCC **development node** via VS Code Remote-SSH.
-- Ensemble generation ran as a **SLURM job/array** on compute resources.
-- Files lived in scratch so runs continued even if the laptop disconnected.
+- Environment setup, file preparation, and job submission were performed on an HPCC **development node** (e.g., VS Code Remote-SSH / Open OnDemand terminal).
+- Ensemble generation ran as **SLURM jobs** (often an array: one protein per task) on compute resources.
+- Files were stored on a persistent filesystem (e.g., scratch) so runs were not affected by local disconnects.
 
 ## Main steps (conceptual)
 1) **Connect and set up a workspace**
-   - Created a scratch directory with a consistent folder layout.
+   - Created a project directory on HPCC with a consistent folder layout (e.g., `inputs/`, `outputs/`, `logs/`, `convert/`).
 
 2) **Prepare starting structures**
-   - Ensured each protein had a clean PDB starting structure.
-   - Filenames were kept consistent so scripts could map proteins to outputs.
+   - Ensured each protein had a clean, valid PDB starting structure.
+   - Standardized filenames/IDs so scripts could consistently map proteins to outputs.
 
-3) **Run aSAMt with SLURM**
-   - Submitted a SLURM job (often an array, one protein per task).
-   - Monitored progress through the SLURM queue until all tasks completed.
+3) **Run aSAMt via SLURM**
+   - Submitted a SLURM job (often an array) to process proteins independently.
+   - Monitored progress using queue tools (e.g., `squeue`) and checked log files for completion/errors.
 
 4) **Collect outputs**
-   - aSAMt produced a topology structure and an ensemble trajectory for each protein.
+   - aSAMt produced ensemble results per protein (commonly a reference/topology structure plus a trajectory/ensemble file, depending on configuration).
 
-5) **Convert trajectory into a multi-model PDB**
-   - Extracted a fixed number of frames (e.g., 50) into `ensemble_50.pdb` per protein.
+5) **Convert ensemble outputs into a multi-model PDB**
+   - Selected a fixed number of frames (e.g., 50) from the trajectory.
+   - Wrote a single **multi-model PDB** per protein (e.g., `ensemble_50.pdb`) for easy loading/animation in PyMOL.
 
-6) **Analyze in PyMOL**
-   - Loaded `ensemble_50.pdb` in PyMOL.
-   - Superimposed ensemble states and aligned to experimental PDB structures where available.
+6) **Analyze ensembles in PyMOL**
+   - Loaded `ensemble_50.pdb` in PyMOL for visualization.
+   - Superimposed ensemble members and optionally aligned them to experimental/reference structures when available.
 
 ## Deliverables
 - For each protein: `ensemble_50.pdb` (multi-model ensemble file).
-- Optional PyMOL `.pse` session and short write-up comparing ensemble variability to experimental structure.
+- Optional PyMOL `.pse` session and a short write-up summarizing ensemble variability and any comparison to experimental structures.
 
 # Created with the help of ChatGPT 5
-## Notes
-- Repo stores workflow scripts and conversion utilities; large raw trajectories can be excluded from GitHub.
+
