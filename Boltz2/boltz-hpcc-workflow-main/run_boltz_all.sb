@@ -1,0 +1,39 @@
+#!/bin/bash --login
+#SBATCH --job-name=boltz_batch
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=32G
+#SBATCH --time=03:59:00
+#SBATCH --gpus=1
+#SBATCH --output=logs/%x-%j.out
+#SBATCH --error=logs/%x-%j.err
+
+set -euo pipefail
+
+# IMPORTANT: run inside your project folder
+cd /mnt/scratch/$USER/boltz_course
+
+module purge
+module load Miniforge3
+
+# Make conda work inside SLURM jobs
+source "$(conda info --base)/etc/profile.d/conda.sh"
+conda activate boltz
+
+# Keep large downloads/cache out of HOME
+export BOLTZ_CACHE=/mnt/scratch/$USER/boltz_cache
+mkdir -p "$BOLTZ_CACHE"
+
+# Ensure these exist BEFORE job tries to write logs
+mkdir -p logs outputs
+
+# Run Boltz on every YAML file in inputs/
+# If you get GPU kernel/cuequivariance errors later, add: --no_kernels
+boltz predict inputs/ \
+  --use_msa_server \
+  --out_dir outputs \
+  --output_format mmcif \
+  --accelerator gpu \
+  --devices 1 \
+  --preprocessing-threads "${SLURM_CPUS_PER_TASK}"
+

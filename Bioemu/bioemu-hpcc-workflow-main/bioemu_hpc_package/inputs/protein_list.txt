@@ -1,0 +1,8 @@
+inputs/1_RIXI.fasta
+inputs/2_PGIP2_8IKW.fasta
+inputs/3_OATP1B1_8HND.fasta
+inputs/4_FLS2_4MN8.fasta
+inputs/5_scFv_P_3H3B.fasta
+inputs/6_scFv_L_8IQS.fasta
+inputs/7_scFab_P_8JYR.fasta
+inputs/8_scFab_L_3KDM.fasta

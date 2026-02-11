@@ -1,0 +1,51 @@
+#!/bin/bash
+#SBATCH --job-name=bioemu
+#SBATCH --output=logs/bioemu_%A_%a.out
+#SBATCH --error=logs/bioemu_%A_%a.err
+#SBATCH --time=04:00:00
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=32G
+#SBATCH --gpus=1
+#SBATCH --array=1-8%1
+
+set -euo pipefail
+
+# Make 'module' available in non-login shells (common in VS Code / batch jobs)
+source /etc/profile || true
+
+module purge
+module load Miniforge3
+
+# Activate your BioEmu environment (you create this env in the README)
+conda activate bioemu
+
+# Always run from the project root
+PROJECT_DIR="${SLURM_SUBMIT_DIR}"
+cd "${PROJECT_DIR}"
+
+# Create needed directories (SLURM fails if logs/ doesn't exist)
+mkdir -p logs outputs cache
+
+# Put BioEmu/ColabFold + HuggingFace caches on SCRATCH to avoid filling HOME
+export BIOEMU_COLABFOLD_DIR="${PROJECT_DIR}/cache/bioemu_colabfold"
+export HF_HOME="${PROJECT_DIR}/cache/hf_home"
+export XDG_CACHE_HOME="${PROJECT_DIR}/cache/xdg_cache"
+mkdir -p "${BIOEMU_COLABFOLD_DIR}" "${HF_HOME}" "${XDG_CACHE_HOME}"
+
+# Pick which sequence file this array task will run
+SEQ_FILE=$(sed -n "${SLURM_ARRAY_TASK_ID}p" inputs/protein_list.txt)
+NAME=$(basename "${SEQ_FILE}" .fasta)
+
+OUTDIR="outputs/${NAME}"
+mkdir -p "${OUTDIR}"
+
+# --- BioEmu settings you may want to adjust ---
+NUM_SAMPLES=100            # try 50-200 for classwork
+MODEL_NAME="bioemu-v1.1"   # default checkpoint per BioEmu README; change if you want
+
+# Run BioEmu sampling
+python -m bioemu.sample   --sequence "${SEQ_FILE}"   --num_samples "${NUM_SAMPLES}"   --output_dir "${OUTDIR}"   --model_name "${MODEL_NAME}"
+
+echo "Done: ${NAME}"
+echo "Output directory: ${OUTDIR}"
+ls -lh "${OUTDIR}" || true

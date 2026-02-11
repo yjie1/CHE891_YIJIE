@@ -1,0 +1,44 @@
+#!/bin/bash --login
+#SBATCH --job-name=asamt
+#SBATCH --output=logs/asamt_%A_%a.out
+#SBATCH --error=logs/asamt_%A_%a.err
+#SBATCH --time=03:59:00
+#SBATCH --cpus-per-task=2
+#SBATCH --mem=8G
+#SBATCH --gpus=1
+#SBATCH --array=1-8%1
+
+set -e
+set -o pipefail
+
+cd "${SLURM_SUBMIT_DIR}"
+mkdir -p logs outputs weights
+
+module purge
+module load Miniforge3
+source "$(conda info --base)/etc/profile.d/conda.sh"
+conda activate sam2
+
+export SAM_WEIGHTS_PATH="${SLURM_SUBMIT_DIR}/weights"
+mkdir -p "${SAM_WEIGHTS_PATH}"
+
+PDB="$(sed -n "${SLURM_ARRAY_TASK_ID}p" inputs/pdb_list.txt)"
+if [[ -z "${PDB}" || ! -f "${PDB}" ]]; then
+  echo "ERROR: Could not find input PDB for task ${SLURM_ARRAY_TASK_ID}: ${PDB}"
+  nl -ba inputs/pdb_list.txt || true
+  exit 2
+fi
+
+NAME="$(basename "${PDB}" .pdb)"
+OUTDIR="outputs/${NAME}"
+mkdir -p "${OUTDIR}"
+PREFIX="${OUTDIR}/${NAME}"
+
+python repo/sam2/scripts/generate_ensemble.py \
+  -c repo/sam2/config/mdcath_model.yaml \
+  -i "${PDB}" \
+  -o "${PREFIX}" \
+  -n 250 \
+  -b 8 \
+  -T 320 \
+  -d cuda

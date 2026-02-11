@@ -1,0 +1,250 @@
+===== Mon Feb  9 08:23:50 PM EST 2026 | seq001_kaf5559671_1_26_374_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 10.969411849975586
+===== Mon Feb  9 08:25:03 PM EST 2026 | seq002_kaj0136423_1_106_454_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.713286399841309
+===== Mon Feb  9 08:26:16 PM EST 2026 | seq003_acn30541_1_22_370_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.672017097473145
+===== Mon Feb  9 08:27:28 PM EST 2026 | seq004_vtt60639_1_26_385_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.686542510986328
+===== Mon Feb  9 08:28:45 PM EST 2026 | seq005_wrk13952_1_3_344_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.690497398376465
+===== Mon Feb  9 08:29:58 PM EST 2026 | seq006_kaf4454825_1_25_372_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.758853912353516
+===== Mon Feb  9 08:31:10 PM EST 2026 | seq007_kah6960192_1_29_376_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.667482376098633
+===== Mon Feb  9 08:32:21 PM EST 2026 | seq008_xp_037205683_1_26_355_xtoa_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.672988891601562
+===== Mon Feb  9 08:33:34 PM EST 2026 | seq009_exa30272_1_26_372_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.805415153503418
+===== Mon Feb  9 08:34:48 PM EST 2026 | seq010_ahx83365_1_23_323_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.673007011413574
+===== Mon Feb  9 08:35:57 PM EST 2026 | seq011_xax95843_1_1_289_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.645365715026855
+===== Mon Feb  9 08:37:05 PM EST 2026 | seq012_xp_070060770_1_39_383_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.824581146240234
+===== Mon Feb  9 08:38:19 PM EST 2026 | seq013_xp_049127115_1_31_376_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.6690673828125
+===== Mon Feb  9 08:39:30 PM EST 2026 | seq014_gkt57984_1_31_389_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.812427520751953
+===== Mon Feb  9 08:40:46 PM EST 2026 | seq015_xp_036581719_2_8_353_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.697790145874023
+===== Mon Feb  9 08:41:59 PM EST 2026 | seq016_kai9147131_1_29_374_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.686347961425781
+===== Mon Feb  9 08:43:07 PM EST 2026 | seq017_kul82157_1_39_382_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.711211204528809
+===== Mon Feb  9 08:44:19 PM EST 2026 | seq018_gam42602_1_156_499_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.977560043334961
+===== Mon Feb  9 08:45:30 PM EST 2026 | seq019_xp_056471677_1_85_428_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 12.038249969482422
+===== Mon Feb  9 08:46:45 PM EST 2026 | seq020_xp_045962116_1_36_379_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 12.023260116577148
+===== Mon Feb  9 08:47:57 PM EST 2026 | seq021_xp_056544913_1_160_503_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 12.116006851196289
+===== Mon Feb  9 08:49:13 PM EST 2026 | seq022_kaj6066298_1_86_429_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.92715835571289
+===== Mon Feb  9 08:50:24 PM EST 2026 | seq023_xp_056931849_1_175_518_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.974478721618652
+===== Mon Feb  9 08:51:37 PM EST 2026 | seq024_xp_057099901_1_157_501_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 12.087935447692871
+===== Mon Feb  9 08:52:48 PM EST 2026 | seq025_xp_058366676_1_151_494_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.999104499816895
+===== Mon Feb  9 08:54:04 PM EST 2026 | seq026_kah8196296_1_178_521_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 12.046274185180664
+===== Mon Feb  9 08:55:18 PM EST 2026 | seq027_XP_007833561_1_150_492_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 12.112222671508789
+===== Mon Feb  9 08:56:32 PM EST 2026 | seq028_xp_020121589_1_167_510_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.817198753356934
+===== Mon Feb  9 08:57:46 PM EST 2026 | seq029_xp_040718629_1_153_497_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.881575584411621
+===== Mon Feb  9 08:58:54 PM EST 2026 | seq030_cag8423456_1_150_494_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 12.053787231445312
+===== Mon Feb  9 09:00:07 PM EST 2026 | seq031_kaj0163345_1_33_377_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.76915168762207
+===== Mon Feb  9 09:01:17 PM EST 2026 | seq032_can8105414_1_125_466_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.742189407348633
+===== Mon Feb  9 09:02:29 PM EST 2026 | seq033_xp_049138661_1_77_421_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.73087215423584
+===== Mon Feb  9 09:03:43 PM EST 2026 | seq034_kin03278_1_37_382_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.532968521118164
+===== Mon Feb  9 09:04:57 PM EST 2026 | seq035_kai8631654_1_112_453_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.95064640045166
+===== Mon Feb  9 09:06:11 PM EST 2026 | seq036_kaj9148486_1_132_477_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.983881950378418
+===== Mon Feb  9 09:07:22 PM EST 2026 | seq037_kak9777436_1_173_516_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 12.11252212524414
+===== Mon Feb  9 09:08:29 PM EST 2026 | seq038_xp_049132146_1_31_368_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.58349609375
+===== Mon Feb  9 09:09:55 PM EST 2026 | seq039_kai1326209_1_107_448_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.966782569885254
+===== Mon Feb  9 09:11:22 PM EST 2026 | seq040_okp13014_1_162_505_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 12.027239799499512
+===== Mon Feb  9 09:12:40 PM EST 2026 | seq041_xp_035328115_1_298_642_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.750899314880371
+===== Mon Feb  9 09:13:57 PM EST 2026 | seq042_kak6210753_1_164_506_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 12.149279594421387
+===== Mon Feb  9 09:15:13 PM EST 2026 | seq043_kzl82936_1_56_399_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.69528865814209
+===== Mon Feb  9 09:16:30 PM EST 2026 | seq044_xp_060305148_1_391_735_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.569867134094238
+===== Mon Feb  9 09:17:50 PM EST 2026 | seq045_kam0167371_1_170_514_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.974743843078613
+===== Mon Feb  9 09:19:04 PM EST 2026 | seq046_cad62160_1_48_392_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.50548267364502
+===== Mon Feb  9 09:20:17 PM EST 2026 | seq047_kah8891203_1_34_378_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.80341625213623
+===== Mon Feb  9 09:21:39 PM EST 2026 | seq048_xp_056818447_1_168_511_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 12.020974159240723
+===== Mon Feb  9 09:23:23 PM EST 2026 | seq049_gjc96178_1_33_390_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.564186096191406
+===== Mon Feb  9 09:24:39 PM EST 2026 | seq050_kfy77649_1_109_451_model_0.pdb =====
+/mnt/home/chengy54/.conda/envs/ppi-graphomer/lib/python3.9/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+completed!
+predict affinity: 11.750541687011719

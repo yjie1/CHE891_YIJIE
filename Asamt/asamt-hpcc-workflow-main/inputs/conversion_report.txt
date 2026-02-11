@@ -1,0 +1,9 @@
+Input_cif	Output_pdb	chains	residues	atoms	orig_chain_ids
+1_RIXI_model_0.cif	1_RIXI_model_0.pdb	1	275	2191	['A']
+2_PGIP2_8IKW_model_0.cif	2_PGIP2_8IKW_model_0.pdb	1	313	2392	['A']
+3_OATP1B1_8HND_model_0.cif	3_OATP1B1_8HND_model_0.pdb	1	700	5436	['A']
+4_FLS2_4MN8_model_0.cif	4_FLS2_4MN8_model_0.pdb	1	773	5925	['A']
+5_scFv_P_3H3B_model_0.cif	5_scFv_P_3H3B_model_0.pdb	1	259	1940	['A']
+6_scFv_L_8IQS_model_0.cif	6_scFv_L_8IQS_model_0.pdb	1	262	1990	['A']
+7_scFab_P_8JYR_model_0.cif	7_scFab_P_8JYR_model_0.pdb	1	500	3694	['A']
+8_scFab_L_3KDM_model_0.cif	8_scFab_L_3KDM_model_0.pdb	1	503	3648	['A']

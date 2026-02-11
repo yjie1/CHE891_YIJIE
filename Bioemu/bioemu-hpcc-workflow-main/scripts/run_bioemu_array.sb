@@ -1,0 +1,52 @@
+#!/bin/bash --login
+#SBATCH --job-name=bioemu
+#SBATCH --output=logs/bioemu_%A_%a.out
+#SBATCH --error=logs/bioemu_%A_%a.err
+#SBATCH --time=03:59:00
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=16G
+#SBATCH --gpus=1
+#SBATCH --array=1-8%1
+
+# DO NOT use 'set -u' (it caused your locale crash)
+set -e
+set -o pipefail
+
+cd "${SLURM_SUBMIT_DIR}"
+
+mkdir -p logs outputs cache
+
+module purge
+module load Miniforge3
+
+# Enable conda inside SLURM
+source "$(conda info --base)/etc/profile.d/conda.sh"
+conda activate bioemu
+
+# Keep BioEmu/ColabFold cache in scratch
+export BIOEMU_COLABFOLD_DIR="${SLURM_SUBMIT_DIR}/cache/bioemu_colabfold"
+mkdir -p "${BIOEMU_COLABFOLD_DIR}"
+
+# Pick the FASTA for this array task
+SEQ_FILE="$(sed -n "${SLURM_ARRAY_TASK_ID}p" inputs/protein_list.txt)"
+
+if [[ -z "${SEQ_FILE}" ]]; then
+  echo "ERROR: No FASTA for task ${SLURM_ARRAY_TASK_ID}"
+  exit 1
+fi
+
+NAME="$(basename "${SEQ_FILE}" .fasta)"
+OUTDIR="outputs/${NAME}"
+mkdir -p "${OUTDIR}"
+
+NUM_SAMPLES=200
+
+echo "Running BioEmu on ${SEQ_FILE}"
+python -m bioemu.sample \
+  --sequence "${SEQ_FILE}" \
+  --num_samples "${NUM_SAMPLES}" \
+  --output_dir "${OUTDIR}"
+
+echo "Finished ${NAME}"
+ls -lh "${OUTDIR}"
+

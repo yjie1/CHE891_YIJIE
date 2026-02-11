@@ -1,0 +1,10 @@
+name: cc
+mlb: ./mlb/cc_go.mlb
+results: ./results
+base:
+  interpro_whole: ./data/interpro/{}.pkl
+test:
+  pid_list_file: ./data/pid_list.pkl
+  pid_go_file: ./data/cc_go.txt
+  pid_pdb_file: ./data/PDB/graph_feature/cc_test_whole_pdb_part0.pkl
+  interpro_file: ./data/cc_interpro.pkl

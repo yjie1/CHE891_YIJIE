@@ -1,0 +1,8 @@
+inputs/1_RIXI_model_0.pdb
+inputs/2_PGIP2_8IKW_model_0.pdb
+inputs/3_OATP1B1_8HND_model_0.pdb
+inputs/4_FLS2_4MN8_model_0.pdb
+inputs/5_scFv_P_3H3B_model_0.pdb
+inputs/6_scFv_L_8IQS_model_0.pdb
+inputs/7_scFab_P_8JYR_model_0.pdb
+inputs/8_scFab_L_3KDM_model_0.pdb
