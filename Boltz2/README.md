@@ -1,43 +1,44 @@
-
 # Boltz — HPCC Workflow (MSU)
 
 ## Goal
-Use Boltz on the MSU HPCC to generate predicted 3D protein structures for the 8 course proteins, then view (and optionally convert) the structures for downstream use in PyMOL.
+Run Boltz on the MSU HPCC to generate predicted **3D protein structures** for our course proteins, then visualize the outputs in PyMOL (and convert formats when needed for downstream tools).
 
 ## What we used as input
-- Protein sequences (the 8 course protein sequences).
-- A working directory on HPCC scratch for organizing inputs and outputs.
+- **Protein sequences** (the course protein sequences).
+- A persistent working directory on HPCC (scratch / research storage) to organize inputs and outputs.
 
 ## Where the work happened
-- We connected to an HPCC **development node** (through VS Code Remote-SSH). This was used for editing files, preparing inputs, and submitting jobs.
-- The heavy computation ran as a **SLURM job** on HPCC compute resources.
-- All files were kept in **/mnt/scratch/<netid>/** so they persisted beyond the session.
+- Connected to an HPCC **development node** (e.g., VS Code Remote-SSH / Open OnDemand terminal) for file editing, setup, and job submission.
+- The actual structure prediction ran as a **SLURM batch job** on HPCC compute resources (CPU/GPU depending on configuration).
+- Inputs/outputs were stored on a persistent filesystem (e.g., scratch) so they remained available after disconnecting.
 
 ## Main steps (conceptual)
-1) **Connect and set up a workspace**
-   - Connected via VS Code Remote-SSH to an HPCC dev node.
-   - Created a scratch folder for the project and a simple folder layout (inputs / outputs / logs).
+1) **Connect and create a workspace**
+   - Logged into an HPCC dev node.
+   - Created a project folder with a simple layout (e.g., `inputs/`, `yamls/`, `outputs/`, `logs/`).
 
 2) **Prepare sequence inputs**
-   - Took the 8 protein sequences and formatted them for Boltz (FASTA/YAML depending on configuration).
-   - Each protein was treated as a separate input case.
+   - Formatted protein sequences in the input format required by Boltz (FASTA and/or YAML depending on the run mode).
+   - Treated each protein as an independent prediction case to keep bookkeeping simple.
 
-3) **Run Boltz through SLURM**
-   - Used an HPCC batch script (SLURM) so the real computation ran on compute hardware.
-   - Monitored job status using the queue tools until the run completed.
+3) **Run Boltz via SLURM**
+   - Used a SLURM job script so the compute-heavy steps ran on allocated compute nodes.
+   - Monitored the run using queue tools (e.g., `squeue`) and checked log files for progress/errors.
 
 4) **Collect predicted structures**
-   - Boltz produced predicted structures (commonly in **mmCIF (.cif)** format) and placed them into the outputs folder.
+   - After completion, gathered Boltz prediction outputs from the designated output directory.
+   - Outputs are commonly written as **mmCIF (.cif)** structure files (plus metadata depending on the configuration).
 
-5) **View and/or convert for PyMOL**
-   - Opened the resulting structures in PyMOL for visualization and comparison.
-   - If a downstream tool required PDB, the mmCIF outputs were converted to **.pdb** (either through PyMOL saving or a converter).
+5) **Visualize and/or convert for PyMOL**
+   - Opened predicted structures in PyMOL for visualization.
+   - When required by downstream tools, converted mmCIF outputs to **PDB (.pdb)** (e.g., by loading in PyMOL and saving as PDB, or using a converter).
 
 ## Deliverables
-- Predicted structure files for each protein (Boltz outputs, usually `.cif`, plus optional `.pdb` copies).
-- Optional PyMOL session file (`.pse`) showing aligned/compared structures.
+- Predicted structure files for each protein (Boltz outputs, typically `.cif`, plus optional `.pdb` copies).
+- Optional PyMOL session file (`.pse`) for visualization, alignment, and comparison.
 
 ## Notes
-- The repo is intended to store workflow documentation and scripts; large caches/weights are not committed.
+- This repository is intended to store **workflow documentation and scripts**.
+- Large model caches, temporary files, and downloaded weights should be stored on HPCC storage (not committed to GitHub).
 
 # README created with the help of ChatGPT 5
